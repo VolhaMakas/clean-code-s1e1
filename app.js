@@ -145,6 +145,8 @@ var taskIncomplete=function(){
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
+    listItem.classList.remove("tasks__input-label--completed");
+    listItem.classList.add("tasks__input-label");
 }
 
 
