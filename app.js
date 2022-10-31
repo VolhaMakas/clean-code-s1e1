@@ -136,20 +136,17 @@ var taskCompleted=function(){
 
 }
 
-
 var taskIncomplete=function(){
     console.log("Incomplete Task...");
-//Mark task as incomplete.
+    //Mark task as incomplete.
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    listItem.querySelector('.tasks__input-label--completed').classList.remove('tasks__input-label--completed')
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
-    listItem.classList.remove("tasks__input-label--completed");
-    listItem.classList.add("tasks__input-label");
+
 }
-
-
 
 var ajaxRequest=function(){
     console.log("AJAX Request");
