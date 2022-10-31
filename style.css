@@ -12,10 +12,10 @@
     text-align: right;
 }
 
-.header-image {
+.header__image {
      width: 100%;
 }
-.header-link {
+.header__link {
     font-family: fantasy, cursive;
 }
 
@@ -42,13 +42,11 @@
     padding: 0px;
 }
 
-.tasks__list,
- .title {
+.tasks__list .title {
     list-style: none;
 }
 
-input,
-.btn {
+input .btn {
     outline: none;
 }
 
@@ -100,7 +98,7 @@ input,
 }
 
 .tasks__input_text--new {
-    width: 318px;
+    width: 100%;
 }
 
 /* Task list */
@@ -141,7 +139,7 @@ input,
     display: none;
 }
 
-.tasks__input_label, .tasks__input_text {
+.tasks__input_label .tasks__input_text {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
@@ -166,9 +164,6 @@ input,
 }
 
 /* Edit Task */
-/* ul li .tasks__input_text {
-    display: none;
-} */
 
 .tasks__list--edit .tasks__input_text {
     display: inline-block;
